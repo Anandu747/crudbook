@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import NoImageSelected from "../../assets/no-image-selected.jpg";
 
+
+
 function createBook() {
   const [title, setTitle] = useState("");
   const [slug, setSlug] = useState("");
@@ -31,17 +33,6 @@ function createBook() {
         body: formData,
       });
 
-    //   const response = await fetch("http://localhost:8000/api/books", {
-    //     method: "POST",
-    //     headers: { "Content-Type": "application/json" },
-    //     body: JSON.stringify({
-    //       title: title,
-    //       slug: slug,
-    //       stars: stars,
-    //       description: description,
-    //       category: categories,
-    //     }),
-    //   });
 
       if (response.ok) {
         setTitle("");

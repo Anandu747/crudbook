@@ -1,6 +1,6 @@
+
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import NoImageSelected from "../../assets/no-image-selected.jpg";
 
 function editBook() {
   const navigate = useNavigate();
